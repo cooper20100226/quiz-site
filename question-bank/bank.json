@@ -1,0 +1,57 @@
+{
+  "meta": {
+    "title": "可擴充題庫",
+    "version": "1.0",
+    "updated": "2026-01-09"
+  },
+  "questions": [
+    {
+      "id": "demo-001",
+      "source": "PDF1_示範",
+      "difficulty": 2,
+      "tags": ["概念", "必背"],
+      "type": "single",
+      "stem": "DNS 的主要用途是什麼？",
+      "options": [
+        "把網域名稱轉換成 IP 位址",
+        "分配 IP 給主機",
+        "加密網路傳輸",
+        "測量網路速度"
+      ],
+      "answer": [0],
+      "explain": {
+        "why": "DNS（Domain Name System）負責名稱解析，把人類可讀的網域名稱對應到 IP 位址。",
+        "options": [
+          "✅ 正確：名稱解析",
+          "❌ 這是 DHCP 的工作",
+          "❌ 這是 TLS/SSL 類的工作",
+          "❌ 這是 throughput/頻寬測量概念"
+        ]
+      }
+    },
+    {
+      "id": "demo-002",
+      "source": "PDF2_示範",
+      "difficulty": 3,
+      "tags": ["比較", "考古"],
+      "type": "single",
+      "stem": "FCFS 與 SJF 的主要差異是？",
+      "options": [
+        "FCFS 一定比 SJF 快",
+        "SJF 會優先執行預估時間短的工作",
+        "FCFS 需要優先度欄位",
+        "SJF 不會發生飢餓（starvation）"
+      ],
+      "answer": [1],
+      "explain": {
+        "why": "SJF（Shortest Job First）用「最短作業時間」當排序依據；FCFS（First Come First Serve）只看先來後到。",
+        "options": [
+          "❌ 不一定，視工作分佈而定",
+          "✅ 正確",
+          "❌ FCFS 不看 priority",
+          "❌ SJF 可能造成長工作飢餓"
+        ]
+      }
+    }
+  ]
+}

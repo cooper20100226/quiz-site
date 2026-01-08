@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>可擴充題庫測驗</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <div class="logo">Q</div>
+      <div class="brandtext">
+        <div class="title">可擴充題庫測驗</div>
+        <div class="subtitle">JSON 題庫｜手機點擊｜即時解析｜GitHub Pages</div>
+      </div>
+    </div>
+    <button id="btnReload" class="btn ghost">重新載入題庫</button>
+  </header>
+
+  <main class="container">
+    <!-- 設定區 -->
+    <section class="card">
+      <div class="card-header">
+        <h2>開始設定</h2>
+        <p class="muted">你之後丟 7 份考古重點給我，我會把題目追加到 <code>question-bank/bank.json</code>。</p>
+      </div>
+
+      <div class="grid">
+        <label class="field">
+          <span>題庫來源（PDF/章節）</span>
+          <select id="filterSource"></select>
+        </label>
+
+        <label class="field">
+          <span>難度</span>
+          <select id="filterDifficulty">
+            <option value="ALL">全部</option>
+            <option value="1">1（簡單）</option>
+            <option value="2">2</option>
+            <option value="3">3（中等）</option>
+            <option value="4">4</option>
+            <option value="5">5（困難）</option>
+          </select>
+        </label>
+
+        <label class="field">
+          <span>出題數量</span>
+          <input id="questionCount" type="number" min="1" value="10" />
+        </label>
+
+        <label class="field">
+          <span>出題模式</span>
+          <select id="mode">
+            <option value="RANDOM">隨機</option>
+            <option value="SEQUENTIAL">依序（題庫順序）</option>
+          </select>
+        </label>
+      </div>
+
+      <div class="row">
+        <label class="switch">
+          <input id="toggleShuffleOptions" type="checkbox" checked />
+          <span>選項隨機</span>
+        </label>
+        <label class="switch">
+          <input id="toggleShowExplain" type="checkbox" checked />
+          <span>作答後顯示解析</span>
+        </label>
+        <label class="switch">
+          <input id="toggleAllowReview" type="checkbox" checked />
+          <span>結束後顯示錯題回顧</span>
+        </label>
+      </div>
+
+      <div class="actions">
+        <button id="btnStart" class="btn primary">開始測驗</button>
+        <button id="btnDemoFill" class="btn">載入示範題</button>
+      </div>
+
+      <div id="loadStatus" class="status muted"></div>
+    </section>
+
+    <!-- 測驗區 -->
+    <section id="quizCard" class="card hidden">
+      <div class="quiz-top">
+        <div class="progress">
+          <div class="progressbar"><div id="progressFill"></div></div>
+          <div class="progressmeta">
+            <span id="progressText">0/0</span>
+            <span id="timerText">00:00</span>
+          </div>
+        </div>
+        <button id="btnQuit" class="btn ghost">結束</button>
+      </div>
+
+      <div class="qmeta">
+        <span id="qSource" class="chip"></span>
+        <span id="qDifficulty" class="chip"></span>
+        <span id="qTags" class="chip muted"></span>
+      </div>
+
+      <h3 id="qStem" class="stem"></h3>
+
+      <div id="options" class="options"></div>
+
+      <div id="feedback" class="feedback hidden"></div>
+
+      <div class="actions">
+        <button id="btnNext" class="btn primary hidden">下一題</button>
+      </div>
+    </section>
+
+    <!-- 結果區 -->
+    <section id="resultCard" class="card hidden">
+      <div class="card-header">
+        <h2>測驗結果</h2>
+        <p id="resultSummary" class="muted"></p>
+      </div>
+
+      <div class="row">
+        <button id="btnRestart" class="btn primary">再測一次</button>
+        <button id="btnExportWrong" class="btn">匯出錯題（JSON）</button>
+      </div>
+
+      <div id="reviewBlock" class="review hidden">
+        <h3>錯題回顧</h3>
+        <div id="wrongList"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer muted">
+    題庫檔案：<code>question-bank/bank.json</code> ｜ 可放 GitHub Pages
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

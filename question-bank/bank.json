@@ -6,52 +6,1638 @@
   },
   "questions": [
     {
-      "id": "demo-001",
-      "source": "PDF1_示範",
-      "difficulty": 2,
-      "tags": ["概念", "必背"],
-      "type": "single",
-      "stem": "DNS 的主要用途是什麼？",
-      "options": [
-        "把網域名稱轉換成 IP 位址",
-        "分配 IP 給主機",
-        "加密網路傳輸",
-        "測量網路速度"
-      ],
-      "answer": [0],
-      "explain": {
-        "why": "DNS（Domain Name System）負責名稱解析，把人類可讀的網域名稱對應到 IP 位址。",
-        "options": [
-          "✅ 正確：名稱解析",
-          "❌ 這是 DHCP 的工作",
-          "❌ 這是 TLS/SSL 類的工作",
-          "❌ 這是 throughput/頻寬測量概念"
-        ]
-      }
-    },
-    {
-      "id": "demo-002",
-      "source": "PDF2_示範",
-      "difficulty": 3,
-      "tags": ["比較", "考古"],
-      "type": "single",
-      "stem": "FCFS 與 SJF 的主要差異是？",
-      "options": [
-        "FCFS 一定比 SJF 快",
-        "SJF 會優先執行預估時間短的工作",
-        "FCFS 需要優先度欄位",
-        "SJF 不會發生飢餓（starvation）"
-      ],
-      "answer": [1],
-      "explain": {
-        "why": "SJF（Shortest Job First）用「最短作業時間」當排序依據；FCFS（First Come First Serve）只看先來後到。",
-        "options": [
-          "❌ 不一定，視工作分佈而定",
-          "✅ 正確",
-          "❌ FCFS 不看 priority",
-          "❌ SJF 可能造成長工作飢餓"
-        ]
-      }
-    }
+  "id": "spine-001",
+  "source": "Spine_PDF_01",
+  "difficulty": 1,
+  "tags": ["必背", "解剖"],
+  "type": "single",
+  "stem": "成人脊椎骨的正確數目為何？",
+  "options": [
+    "31 塊",
+    "33 塊",
+    "35 塊",
+    "37 塊"
+  ],
+  "answer": [1],
+  "explain": {
+    "why": "脊椎共 33 塊：C7 + T12 + L5 + S5（融合）+ Co4（變異）。",
+    "options": [
+      "❌ 31 是脊神經對數",
+      "✅ 正確",
+      "❌ 多算",
+      "❌ 多算"
+    ]
+  }
+},
+{
+  "id": "spine-002",
+  "source": "Spine_PDF_01",
+  "difficulty": 2,
+  "tags": ["曲度", "考古"],
+  "type": "single",
+  "stem": "下列何者為頸椎的正常生理曲度？",
+  "options": [
+    "Kyphosis",
+    "Lordosis",
+    "Scoliosis",
+    "Flat curve"
+  ],
+  "answer": [1],
+  "explain": {
+    "why": "頸椎為前凸（Lordotic curve），用來平衡頭部重量並增加避震能力。",
+    "options": [
+      "❌ 後凸是胸椎",
+      "✅ 正確",
+      "❌ 側彎",
+      "❌ 非正常生理曲度"
+    ]
+  }
+},
+{
+  "id": "spine-003",
+  "source": "Spine_PDF_01",
+  "difficulty": 3,
+  "tags": ["Facet joint", "高頻"],
+  "type": "single",
+  "stem": "哪一個脊椎區段最容易旋轉？其小面關節方向為何？",
+  "options": [
+    "頸椎，Axial plane",
+    "胸椎，Sagittal plane",
+    "腰椎，Coronal plane",
+    "胸椎，Axial plane"
+  ],
+  "answer": [0],
+  "explain": {
+    "why": "頸椎小面關節位於水平面（Axial），最利於旋轉，因此活動度最大、穩定度最低。",
+    "options": [
+      "✅ 正確",
+      "❌ 胸椎是 Coronal",
+      "❌ 腰椎是 Sagittal",
+      "❌ 胸椎不是 Axial"
+    ]
+  }
+},
+{
+  "id": "spine-004",
+  "source": "Spine_PDF_01",
+  "difficulty": 3,
+  "tags": ["C1", "超愛考"],
+  "type": "single",
+  "stem": "下列關於 C1（Atlas）的敘述，何者正確？",
+  "options": [
+    "具有椎體",
+    "具有棘突",
+    "由前弓、後弓與側塊構成",
+    "主要負責旋轉（No）"
+  ],
+  "answer": [2],
+  "explain": {
+    "why": "C1 沒有椎體與棘突，結構像骨環，由 anterior arch、posterior arch 與 lateral masses 組成。",
+    "options": [
+      "❌ C1 無椎體",
+      "❌ C1 無棘突",
+      "✅ 正確",
+      "❌ 旋轉是 C1–C2"
+    ]
+  }
+},
+{
+  "id": "spine-005",
+  "source": "Spine_PDF_01",
+  "difficulty": 4,
+  "tags": ["Jefferson fracture", "陷阱"],
+  "type": "single",
+  "stem": "關於 Jefferson fracture，下列何者正確？",
+  "options": [
+    "一定造成脊髓損傷",
+    "為 C2 pars fracture",
+    "為 C1 爆裂性骨折",
+    "多由旋轉傷造成"
+  ],
+  "answer": [2],
+  "explain": {
+    "why": "Jefferson fracture 是 C1 的爆裂性骨折，常由頭部垂直受力造成，椎管大，不一定傷脊髓。",
+    "options": [
+      "❌ 考試陷阱",
+      "❌ 那是 Hangman fracture",
+      "✅ 正確",
+      "❌ 是軸向壓力"
+    ]
+  }
+},
+{
+  "id": "spine-006",
+  "source": "Spine_PDF_01",
+  "difficulty": 3,
+  "tags": ["C2", "Yes/No"],
+  "type": "single",
+  "stem": "點頭（Yes）與搖頭（No）的正確關節配對為何？",
+  "options": [
+    "Yes：C1–C2；No：O–C1",
+    "Yes：O–C1；No：C1–C2",
+    "Yes：C2–C3；No：C1–C2",
+    "Yes：O–C2；No：C2–C3"
+  ],
+  "answer": [1],
+  "explain": {
+    "why": "O–C1 負責點頭（Yes），C1–C2 負責左右旋轉（No）。",
+    "options": [
+      "❌ 顛倒",
+      "✅ 正確",
+      "❌ 非主要動作節段",
+      "❌ 錯誤"
+    ]
+  }
+},
+{
+  "id": "spine-007",
+  "source": "Spine_PDF_01",
+  "difficulty": 4,
+  "tags": ["RA", "臨床"],
+  "type": "single",
+  "stem": "RA 病人出現後頭部疼痛，最可能原因為何？",
+  "options": [
+    "C5–6 椎間盤突出",
+    "C1–C2 anterior subluxation",
+    "胸椎小面關節炎",
+    "肌筋膜疼痛症候群"
+  ],
+  "answer": [1],
+  "explain": {
+    "why": "RA 易破壞 C1–C2 韌帶與關節囊，造成前脫位並牽拉 C2 神經根，引起後頭痛。",
+    "options": [
+      "❌ 這是經典陷阱",
+      "✅ 正確",
+      "❌ 不符合分佈",
+      "❌ 非主要機轉"
+    ]
+  }
+},
+{
+  "id": "spine-008",
+  "source": "Spine_PDF_01",
+  "difficulty": 3,
+  "tags": ["腰椎", "HIVD"],
+  "type": "single",
+  "stem": "L4–5 椎間盤突出最常壓迫哪一條神經？",
+  "options": [
+    "L4 exiting nerve",
+    "L4 traversing nerve",
+    "L5 exiting nerve",
+    "L5 traversing nerve"
+  ],
+  "answer": [3],
+  "explain": {
+    "why": "在腰椎，椎間盤突出最常壓迫 traversing nerve root，因此 L4–5 會壓 L5。",
+    "options": [
+      "❌ 不是 exiting",
+      "❌ 錯誤",
+      "❌ exiting nerve",
+      "✅ 正確"
+    ]
+  }
+},
+{
+  "id": "spine-009",
+  "source": "Spine_PDF_01",
+  "difficulty": 5,
+  "tags": ["急症", "Cauda equina"],
+  "type": "single",
+  "stem": "下列哪一組症狀最符合 Cauda equina syndrome？",
+  "options": [
+    "單側手麻",
+    "後頭部疼痛",
+    "下肢無力合併大小便失禁",
+    "胸背痛伴心悸"
+  ],
+  "answer": [2],
+  "explain": {
+    "why": "馬尾神經症候群為急症，典型表現為下肢無力、saddle anesthesia 與大小便失控，需立即手術。",
+    "options": [
+      "❌ 頸椎神經",
+      "❌ C2 radiculopathy",
+      "✅ 正確（急診）",
+      "❌ 內臟轉移痛"
+    ]
+  }
+},
+{
+  "id": "spine-010",
+  "source": "Spine_PDF_01",
+  "difficulty": 5,
+  "tags": ["血管", "超高頻"],
+  "type": "single",
+  "stem": "Adamkiewicz artery 的典型特徵為何？",
+  "options": [
+    "供應頸髓，位於右側",
+    "供應下胸椎與腰椎脊髓，多在左側",
+    "為靜脈系統的一部分",
+    "常見於 C3–5"
+  ],
+  "answer": [1],
+  "explain": {
+    "why": "Adamkiewicz artery 是最大根型動脈，供應下胸椎與腰椎脊髓，常位於 T9–T12、左側。",
+    "options": [
+      "❌ 錯誤",
+      "✅ 正確",
+      "❌ 是動脈",
+      "❌ 範圍錯誤"
+    ]
+  }
+},
+{
+  "id": "gyn-001",
+  "source": "GYN_PDF_01",
+  "difficulty": 2,
+  "tags": ["腹痛", "第一步"],
+  "type": "single",
+  "stem": "育齡女性因腹痛就診時，最重要的第一步為何？",
+  "options": [
+    "安排電腦斷層",
+    "先給止痛藥",
+    "先排除是否懷孕",
+    "先做抹片檢查"
+  ],
+  "answer": [2],
+  "explain": {
+    "why": "育齡女性腹痛一定要先排除懷孕，特別是子宮外孕，可能致命。",
+    "options": [
+      "❌ 非第一步",
+      "❌ 可能掩蓋症狀",
+      "✅ 正確（超高頻）",
+      "❌ 與急性腹痛無關"
+    ]
+  }
+},
+{
+  "id": "gyn-002",
+  "source": "GYN_PDF_01",
+  "difficulty": 3,
+  "tags": ["子宮外孕", "經典三症狀"],
+  "type": "single",
+  "stem": "下列何者不是子宮外孕的典型症狀？",
+  "options": [
+    "腹痛",
+    "月經沒來",
+    "陰道出血",
+    "發燒與白血球上升"
+  ],
+  "answer": [3],
+  "explain": {
+    "why": "子宮外孕的經典三症狀為腹痛、停經、陰道出血，發燒較偏向感染。",
+    "options": [
+      "❌ 典型症狀",
+      "❌ 典型症狀",
+      "❌ 典型症狀",
+      "✅ 正確"
+    ]
+  }
+},
+{
+  "id": "gyn-003",
+  "source": "GYN_PDF_01",
+  "difficulty": 4,
+  "tags": ["子宮外孕", "陷阱"],
+  "type": "single",
+  "stem": "關於子宮外孕，下列何者正確？",
+  "options": [
+    "一定會有明顯症狀",
+    "最常著床於子宮頸",
+    "hCG 很高但子宮內看不到胚胎需高度懷疑",
+    "只要超音波正常即可排除"
+  ],
+  "answer": [2],
+  "explain": {
+    "why": "子宮外孕可能完全無症狀，hCG 高卻未見子宮內胚胎是關鍵警訊。",
+    "options": [
+      "❌ 最危險的錯誤觀念",
+      "❌ 最常見是輸卵管",
+      "✅ 正確（考試超愛）",
+      "❌ 一定要合併 hCG"
+    ]
+  }
+},
+{
+  "id": "gyn-004",
+  "source": "GYN_PDF_01",
+  "difficulty": 4,
+  "tags": ["卵巢扭轉", "急診"],
+  "type": "single",
+  "stem": "下列哪一個婦科疾病屬於急診級，需要立即處理？",
+  "options": [
+    "子宮肌瘤",
+    "卵巢扭轉",
+    "陰道念珠菌感染",
+    "細菌性陰道炎"
+  ],
+  "answer": [1],
+  "explain": {
+    "why": "卵巢扭轉會造成血流中斷，延遲處理可能導致卵巢壞死。",
+    "options": [
+      "❌ 非急症",
+      "✅ 正確（急診）",
+      "❌ 門診治療",
+      "❌ 門診治療"
+    ]
+  }
+},
+{
+  "id": "gyn-005",
+  "source": "GYN_PDF_01",
+  "difficulty": 3,
+  "tags": ["內膜異位症", "經典"],
+  "type": "single",
+  "stem": "痛經越來越嚴重，最應懷疑下列何者？",
+  "options": [
+    "子宮肌瘤",
+    "子宮內膜異位症",
+    "卵巢癌",
+    "細菌性陰道炎"
+  ],
+  "answer": [1],
+  "explain": {
+    "why": "子宮內膜異位症的經典表現為進行性加重的痛經。",
+    "options": [
+      "❌ 不一定進行性",
+      "✅ 正確",
+      "❌ 非典型",
+      "❌ 無關"
+    ]
+  }
+},
+{
+  "id": "gyn-006",
+  "source": "GYN_PDF_01",
+  "difficulty": 5,
+  "tags": ["PCOS", "診斷標準"],
+  "type": "single",
+  "stem": "PCOS 的 Rotterdam 診斷標準為何？",
+  "options": [
+    "三項皆需符合",
+    "三選二",
+    "只要有多囊卵巢即可",
+    "必須合併不孕"
+  ],
+  "answer": [1],
+  "explain": {
+    "why": "PCOS 診斷為三項中符合任兩項：無排卵、高雄性素、多囊卵巢。",
+    "options": [
+      "❌ 太嚴格",
+      "✅ 正確（必背）",
+      "❌ 不足",
+      "❌ 非必要條件"
+    ]
+  }
+},
+{
+  "id": "gyn-007",
+  "source": "GYN_PDF_01",
+  "difficulty": 4,
+  "tags": ["陰道炎", "性伴侶"],
+  "type": "single",
+  "stem": "哪一種陰道感染需要性伴侶一起治療？",
+  "options": [
+    "念珠菌感染",
+    "細菌性陰道炎",
+    "陰道滴蟲感染",
+    "子宮內膜炎"
+  ],
+  "answer": [2],
+  "explain": {
+    "why": "陰道滴蟲屬性傳染病，性伴侶需同時治療以避免再感染。",
+    "options": [
+      "❌ 不需要",
+      "❌ 不需要",
+      "✅ 正確",
+      "❌ 非性傳染為主"
+    ]
+  }
+},
+{
+  "id": "gyn-008",
+  "source": "GYN_PDF_01",
+  "difficulty": 4,
+  "tags": ["婦科癌症", "高頻"],
+  "type": "single",
+  "stem": "下列哪一種婦科癌症沒有良好的篩檢工具？",
+  "options": [
+    "子宮頸癌",
+    "子宮內膜癌",
+    "卵巢癌",
+    "陰道癌"
+  ],
+  "answer": [2],
+  "explain": {
+    "why": "卵巢癌缺乏有效篩檢工具，常較晚期才被發現。",
+    "options": [
+      "❌ 有抹片與 HPV",
+      "❌ 有異常出血警訊",
+      "✅ 正確（必考）",
+      "❌ 非重點"
+    ]
+  }
+},
+{
+  "id": "aesthetic-001",
+  "source": "Aesthetic_PDF_01",
+  "difficulty": 2,
+  "tags": ["法規", "必考"],
+  "type": "single",
+  "stem": "關於台灣醫學美容相關法規，下列何者正確？",
+  "options": [
+    "未滿 18 歲可進行雙眼皮手術",
+    "醫學美容不屬於醫療行為",
+    "特定美容手術對年齡有限制",
+    "只要病人同意即可施行任何手術"
+  ],
+  "answer": [2],
+  "explain": {
+    "why": "依《特定美容醫學手術管理辦法》，未滿 18 歲禁止施行特定美容手術。",
+    "options": [
+      "❌ 法規禁止",
+      "❌ 醫美屬醫療行為",
+      "✅ 正確（一定考）",
+      "❌ 合法性不能只看同意"
+    ]
+  }
+},
+{
+  "id": "aesthetic-002",
+  "source": "Aesthetic_PDF_01",
+  "difficulty": 3,
+  "tags": ["法規", "專科限制"],
+  "type": "single",
+  "stem": "下列何者最符合醫學美容考試的核心法規邏輯？",
+  "options": [
+    "技術好就可以做",
+    "病人想做就能做",
+    "重點在於醫師是否有資格",
+    "是否使用最新器材"
+  ],
+  "answer": [2],
+  "explain": {
+    "why": "考試重點不是技術，而是「該專科醫師有沒有資格施行該手術」。",
+    "options": [
+      "❌ 非考試邏輯",
+      "❌ 非法規核心",
+      "✅ 正確（老師超愛）",
+      "❌ 與資格無關"
+    ]
+  }
+},
+{
+  "id": "aesthetic-003",
+  "source": "Aesthetic_PDF_01",
+  "difficulty": 3,
+  "tags": ["眼整形", "觀念"],
+  "type": "single",
+  "stem": "亞洲人進行雙眼皮手術時，最重要的核心考量為何？",
+  "options": [
+    "割得越深越好",
+    "眼瞼脂肪分布與提眼瞼肌功能",
+    "單純追求歐美寬度",
+    "只考慮皮膚厚薄"
+  ],
+  "answer": [1],
+  "explain": {
+    "why": "亞洲眼整形重點在脂肪分布與提眼瞼肌功能，而非割得多深。",
+    "options": [
+      "❌ 錯誤觀念",
+      "✅ 正確",
+      "❌ 不符合臨床實務",
+      "❌ 考量不完整"
+    ]
+  }
+},
+{
+  "id": "aesthetic-004",
+  "source": "Aesthetic_PDF_01",
+  "difficulty": 4,
+  "tags": ["隆鼻", "材料比較"],
+  "type": "single",
+  "stem": "關於隆鼻材料，下列敘述何者正確？",
+  "options": [
+    "矽膠完全不會感染",
+    "自體肋軟骨完全沒有風險",
+    "自體肋軟骨相容性佳但可能彎曲",
+    "感染一定代表醫師技術不佳"
+  ],
+  "answer": [2],
+  "explain": {
+    "why": "自體肋軟骨相容性佳，但仍有彎曲或吸收風險。",
+    "options": [
+      "❌ 任何植入物都有感染風險",
+      "❌ 仍有併發症",
+      "✅ 正確（高頻）",
+      "❌ 考試陷阱"
+    ]
+  }
+},
+{
+  "id": "aesthetic-005",
+  "source": "Aesthetic_PDF_01",
+  "difficulty": 4,
+  "tags": ["抽脂", "臨床觀念"],
+  "type": "single",
+  "stem": "關於抽脂（Liposuction），下列何者正確？",
+  "options": [
+    "是最佳減肥方式",
+    "可暫時減少脂肪細胞",
+    "是唯一能永久減少脂肪細胞數量的方法",
+    "適合嚴重肥胖者"
+  ],
+  "answer": [2],
+  "explain": {
+    "why": "抽脂是唯一能永久減少脂肪細胞數量的醫療方式，但不等於減肥。",
+    "options": [
+      "❌ 抽脂不是減肥",
+      "❌ 是永久",
+      "✅ 正確（必背）",
+      "❌ 不適合"
+    ]
+  }
+},
+{
+  "id": "aesthetic-006",
+  "source": "Aesthetic_PDF_01",
+  "difficulty": 4,
+  "tags": ["Botox", "機轉"],
+  "type": "single",
+  "stem": "Botox 的主要作用機轉為何？",
+  "options": [
+    "破壞肌肉纖維",
+    "阻斷乙醯膽鹼釋放",
+    "刺激膠原蛋白增生",
+    "直接溶解脂肪"
+  ],
+  "answer": [1],
+  "explain": {
+    "why": "Botox 阻斷乙醯膽鹼釋放，使肌肉無法收縮，達到放鬆效果。",
+    "options": [
+      "❌ 非主要機轉",
+      "✅ 正確",
+      "❌ 這是雷射或能量醫學",
+      "❌ 非 Botox 作用"
+    ]
+  }
+},
+{
+  "id": "aesthetic-007",
+  "source": "Aesthetic_PDF_01",
+  "difficulty": 5,
+  "tags": ["Fillers", "警語"],
+  "type": "single",
+  "stem": "Fillers 注射最嚴重可能造成的併發症為何？",
+  "options": [
+    "暫時腫脹",
+    "皮膚過敏",
+    "致盲或中風",
+    "局部瘀青"
+  ],
+  "answer": [2],
+  "explain": {
+    "why": "Fillers 若誤入血管，可能造成血管栓塞，導致致盲甚至中風。",
+    "options": [
+      "❌ 常見但不致命",
+      "❌ 相對輕微",
+      "✅ 正確（超級重點）",
+      "❌ 常見副作用"
+    ]
+  }
+},
+{
+  "id": "aesthetic-008",
+  "source": "Aesthetic_PDF_01",
+  "difficulty": 4,
+  "tags": ["雷射", "原理"],
+  "type": "single",
+  "stem": "雷射治療的核心原理為何？",
+  "options": [
+    "全面破壞皮膚",
+    "選擇性光熱分解",
+    "刺激神經傳導",
+    "增加血管生成"
+  ],
+  "answer": [1],
+  "explain": {
+    "why": "雷射利用選擇性光熱分解，針對特定目標產生治療效果。",
+    "options": [
+      "❌ 錯誤",
+      "✅ 正確（必考）",
+      "❌ 非雷射用途",
+      "❌ 非主要機轉"
+    ]
+  }
+},
+{
+  "id": "aesthetic-009",
+  "source": "Aesthetic_PDF_01",
+  "difficulty": 3,
+  "tags": ["HIFU", "非侵入"],
+  "type": "single",
+  "stem": "音波拉皮（HIFU）的主要作用層次為何？",
+  "options": [
+    "表皮層",
+    "真皮層",
+    "筋膜層（SMAS）",
+    "皮下脂肪層"
+  ],
+  "answer": [2],
+  "explain": {
+    "why": "HIFU 主要加熱 SMAS 層，刺激膠原蛋白新生，達到拉皮效果。",
+    "options": [
+      "❌ 太表層",
+      "❌ 非主要目標",
+      "✅ 正確",
+      "❌ 不是拉皮核心"
+    ]
+  }
+},
+{
+  "id": "aesthetic-010",
+  "source": "Aesthetic_PDF_01",
+  "difficulty": 2,
+  "tags": ["醫療倫理", "總結"],
+  "type": "single",
+  "stem": "醫學美容最重要的核心觀念為何？",
+  "options": [
+    "做得漂不漂亮",
+    "病人滿不滿意",
+    "出事時能否安全處理",
+    "價格是否有競爭力"
+  ],
+  "answer": [2],
+  "explain": {
+    "why": "醫美是醫療，重點在於風險控管與併發症處理能力，而非外觀本身。",
+    "options": [
+      "❌ 非醫療核心",
+      "❌ 非考試重點",
+      "✅ 正確（老師最愛）",
+      "❌ 與醫療本質無關"
+    ]
+  }
+},
+{
+  "id": "ent-001",
+  "source": "ENT_PDF_01",
+  "difficulty": 2,
+  "tags": ["基本", "高頻"],
+  "type": "single",
+  "stem": "ENT 的正式學科名稱為何？",
+  "options": [
+    "Neurology",
+    "Ophthalmology",
+    "Otolaryngology – Head and Neck Surgery",
+    "Pulmonology"
+  ],
+  "answer": [2],
+  "explain": {
+    "why": "ENT 的正式名稱為 Otolaryngology – Head and Neck Surgery。",
+    "options": [
+      "❌ 神經科",
+      "❌ 眼科",
+      "✅ 正確",
+      "❌ 胸腔相關"
+    ]
+  }
+},
+{
+  "id": "ent-002",
+  "source": "ENT_PDF_01",
+  "difficulty": 3,
+  "tags": ["鼻竇炎", "機轉"],
+  "type": "single",
+  "stem": "鼻竇炎的主要病理機轉為何？",
+  "options": [
+    "鼻竇黏膜萎縮",
+    "鼻竇開口阻塞導致低氧與分泌物滯留",
+    "自體免疫反應",
+    "血管破裂"
+  ],
+  "answer": [1],
+  "explain": {
+    "why": "鼻竇炎是因鼻竇引流受阻，造成低氧狀態與分泌物滯留。",
+    "options": [
+      "❌ 非主要原因",
+      "✅ 正確（必考）",
+      "❌ 非主因",
+      "❌ 出血不是主因"
+    ]
+  }
+},
+{
+  "id": "ent-003",
+  "source": "ENT_PDF_01",
+  "difficulty": 4,
+  "tags": ["鼻竇炎", "併發症"],
+  "type": "single",
+  "stem": "鼻竇炎可能造成的嚴重併發症，下列何者正確？",
+  "options": [
+    "肝功能異常",
+    "腦膜炎或腦膿瘍",
+    "心律不整",
+    "腎衰竭"
+  ],
+  "answer": [1],
+  "explain": {
+    "why": "鼻竇炎可能造成眼部與顱內併發症，如腦膜炎與腦膿瘍。",
+    "options": [
+      "❌ 無關",
+      "✅ 正確（高頻）",
+      "❌ 無關",
+      "❌ 無關"
+    ]
+  }
+},
+{
+  "id": "ent-004",
+  "source": "ENT_PDF_01",
+  "difficulty": 3,
+  "tags": ["鼻中隔彎曲", "治療"],
+  "type": "single",
+  "stem": "下列何者為鼻中隔矯正手術（Septoplasty）的適應症？",
+  "options": [
+    "單純外觀不滿意",
+    "短期感冒造成鼻塞",
+    "長期鼻塞影響呼吸",
+    "所有鼻竇炎患者"
+  ],
+  "answer": [2],
+  "explain": {
+    "why": "Septoplasty 適應症包含長期鼻塞、反覆鼻竇炎、OSA 等。",
+    "options": [
+      "❌ 非主要適應症",
+      "❌ 屬暫時狀況",
+      "✅ 正確",
+      "❌ 非所有患者"
+    ]
+  }
+},
+{
+  "id": "ent-005",
+  "source": "ENT_PDF_01",
+  "difficulty": 4,
+  "tags": ["鼻出血", "鑑別"],
+  "type": "single",
+  "stem": "關於鼻出血（Epistaxis），下列配對何者正確？",
+  "options": [
+    "小孩－後鼻部出血",
+    "老人－Little’s area",
+    "小孩－前鼻部出血",
+    "與高血壓無關"
+  ],
+  "answer": [2],
+  "explain": {
+    "why": "小孩常為前鼻部（Little’s area）出血；老人多為後鼻部出血。",
+    "options": [
+      "❌ 錯誤",
+      "❌ 錯誤",
+      "✅ 正確（必考）",
+      "❌ 高血壓是原因之一"
+    ]
+  }
+},
+{
+  "id": "ent-006",
+  "source": "ENT_PDF_01",
+  "difficulty": 4,
+  "tags": ["外耳炎", "病原菌"],
+  "type": "single",
+  "stem": "游泳者耳（外耳炎）最常見的致病菌為何？",
+  "options": [
+    "Staphylococcus aureus",
+    "Streptococcus pneumoniae",
+    "Pseudomonas aeruginosa",
+    "Candida albicans"
+  ],
+  "answer": [2],
+  "explain": {
+    "why": "外耳炎（游泳者耳）最常見致病菌為 Pseudomonas aeruginosa。",
+    "options": [
+      "❌ 多為耳疔",
+      "❌ 中耳炎常見",
+      "✅ 正確（必背）",
+      "❌ 為黴菌"
+    ]
+  }
+},
+{
+  "id": "ent-007",
+  "source": "ENT_PDF_01",
+  "difficulty": 5,
+  "tags": ["眩暈", "鑑別"],
+  "type": "single",
+  "stem": "下列何者最符合 BPPV 的臨床特徵？",
+  "options": [
+    "眩暈持續數小時",
+    "伴隨聽力下降",
+    "頭位改變即誘發，持續時間短",
+    "與內淋巴水腫有關"
+  ],
+  "answer": [2],
+  "explain": {
+    "why": "BPPV 為耳石脫落，頭位改變誘發，眩暈短暫且不影響聽力。",
+    "options": [
+      "❌ 這是梅尼爾氏症",
+      "❌ 無聽損",
+      "✅ 正確（超高頻）",
+      "❌ 為梅尼爾氏症"
+    ]
+  }
+},
+{
+  "id": "ent-008",
+  "source": "ENT_PDF_01",
+  "difficulty": 5,
+  "tags": ["梅尼爾氏症", "三聯症"],
+  "type": "single",
+  "stem": "梅尼爾氏症的典型臨床三聯症為何？",
+  "options": [
+    "眩暈、耳痛、耳漏",
+    "眩暈、低頻聽力下降、耳鳴",
+    "頭痛、噁心、嘔吐",
+    "耳悶、鼻塞、頭痛"
+  ],
+  "answer": [1],
+  "explain": {
+    "why": "梅尼爾氏症為內淋巴水腫，典型三聯症為眩暈、低頻聽損、耳鳴。",
+    "options": [
+      "❌ 非典型",
+      "✅ 正確（必考）",
+      "❌ 非 ENT 特異",
+      "❌ 錯誤"
+    ]
+  }
+},
+{
+  "id": "ent-009",
+  "source": "ENT_PDF_01",
+  "difficulty": 4,
+  "tags": ["口腔癌", "危險因子"],
+  "type": "single",
+  "stem": "下列何者為口腔癌最重要的危險因子？",
+  "options": [
+    "咖啡",
+    "檳榔",
+    "辛辣食物",
+    "幽門螺旋桿菌"
+  ],
+  "answer": [1],
+  "explain": {
+    "why": "檳榔為第一類致癌物，是口腔癌最重要的危險因子。",
+    "options": [
+      "❌ 無直接關聯",
+      "✅ 正確（一定考）",
+      "❌ 無直接證據",
+      "❌ 與胃癌相關"
+    ]
+  }
+},
+{
+  "id": "ent-010",
+  "source": "ENT_PDF_01",
+  "difficulty": 4,
+  "tags": ["鼻咽癌", "高頻"],
+  "type": "single",
+  "stem": "鼻咽癌的典型早期表現為何？",
+  "options": [
+    "劇烈喉嚨痛",
+    "無痛性頸部腫塊",
+    "反覆鼻出血",
+    "持續耳痛"
+  ],
+  "answer": [1],
+  "explain": {
+    "why": "鼻咽癌常以無痛性頸部淋巴結腫大表現，且與 EB 病毒相關。",
+    "options": [
+      "❌ 非典型",
+      "✅ 正確（超高頻）",
+      "❌ 非主要表現",
+      "❌ 非典型"
+    ]
+  }
+},
+{
+  "id": "gi-001",
+  "source": "GI_PDF_01",
+  "difficulty": 2,
+  "tags": ["小腸", "解剖", "必背"],
+  "type": "single",
+  "stem": "小腸最主要負責的功能為何？",
+  "options": [
+    "水分回收",
+    "營養消化與吸收",
+    "糞便形成",
+    "腸道菌相代謝"
+  ],
+  "answer": [1],
+  "explain": {
+    "why": "小腸是主要進行營養消化與吸收的腸段。",
+    "options": [
+      "❌ 主要在大腸",
+      "✅ 正確",
+      "❌ 大腸功能",
+      "❌ 非主要功能"
+    ]
+  }
+},
+{
+  "id": "gi-002",
+  "source": "GI_PDF_01",
+  "difficulty": 3,
+  "tags": ["小腸", "組織層", "高頻"],
+  "type": "single",
+  "stem": "腸道蠕動（peristalsis）主要由哪一層與神經叢控制？",
+  "options": [
+    "Mucosa + Meissner’s plexus",
+    "Submucosa + Meissner’s plexus",
+    "Muscularis externa + Auerbach’s plexus",
+    "Serosa + autonomic nerve"
+  ],
+  "answer": [2],
+  "explain": {
+    "why": "腸道蠕動由 muscularis externa，並受 Auerbach’s（myenteric）plexus 控制。",
+    "options": [
+      "❌ 吸收與分泌為主",
+      "❌ 分泌調控",
+      "✅ 正確（必考）",
+      "❌ 非主要機轉"
+    ]
+  }
+},
+{
+  "id": "gi-003",
+  "source": "GI_PDF_01",
+  "difficulty": 4,
+  "tags": ["血液供應", "陷阱"],
+  "type": "single",
+  "stem": "哪一段腸道具有雙重血液供應？",
+  "options": [
+    "Jejunum",
+    "Ileum",
+    "Duodenum",
+    "Colon"
+  ],
+  "answer": [2],
+  "explain": {
+    "why": "Duodenum 位於 foregut 與 midgut 交界，來自 celiac trunk 與 SMA 雙重供血。",
+    "options": [
+      "❌ 單一 SMA",
+      "❌ 單一 SMA",
+      "✅ 正確（超愛考）",
+      "❌ 非雙重"
+    ]
+  }
+},
+{
+  "id": "gi-004",
+  "source": "GI_PDF_01",
+  "difficulty": 5,
+  "tags": ["SBO", "病因", "必考"],
+  "type": "single",
+  "stem": "Small bowel obstruction（SBO）最常見的原因為何？",
+  "options": [
+    "Hernia",
+    "腫瘤",
+    "術後沾黏",
+    "Crohn’s disease"
+  ],
+  "answer": [2],
+  "explain": {
+    "why": "SBO 最常見為 mechanical obstruction，其中術後沾黏約佔 75%。",
+    "options": [
+      "❌ 次常見",
+      "❌ 次要原因",
+      "✅ 正確（一定要背）",
+      "❌ 非最常見"
+    ]
+  }
+},
+{
+  "id": "gi-005",
+  "source": "GI_PDF_01",
+  "difficulty": 5,
+  "tags": ["SBO", "急症", "鑑別"],
+  "type": "single",
+  "stem": "下列何者最提示為 strangulated SBO？",
+  "options": [
+    "間歇性腹痛",
+    "高頻金屬音腸音",
+    "疼痛與理學檢查不成比例",
+    "單純腹脹"
+  ],
+  "answer": [2],
+  "explain": {
+    "why": "疼痛與理學檢查不成比例是腸缺血與絞窄的重要警訊。",
+    "options": [
+      "❌ 早期表現",
+      "❌ 非絞窄特徵",
+      "✅ 正確（外科急症）",
+      "❌ 不具特異性"
+    ]
+  }
+},
+{
+  "id": "gi-006",
+  "source": "GI_PDF_01",
+  "difficulty": 4,
+  "tags": ["Meckel", "Rule of twos"],
+  "type": "single",
+  "stem": "關於 Meckel’s diverticulum，下列何者正確？",
+  "options": [
+    "為假性憩室",
+    "最常位於 jejunum",
+    "屬於真性憩室",
+    "女性較常見"
+  ],
+  "answer": [2],
+  "explain": {
+    "why": "Meckel’s diverticulum 為真性憩室，含全層腸壁。",
+    "options": [
+      "❌ 假性憩室無肌層",
+      "❌ 位於 ileum",
+      "✅ 正確（Rule of twos）",
+      "❌ 男性較多"
+    ]
+  }
+},
+{
+  "id": "gi-007",
+  "source": "GI_PDF_01",
+  "difficulty": 4,
+  "tags": ["小腸腫瘤", "鑑別"],
+  "type": "single",
+  "stem": "小腸中最常發生神經內分泌腫瘤（Carcinoid/NET）的部位為何？",
+  "options": [
+    "Duodenum",
+    "Jejunum",
+    "Ileum",
+    "Colon"
+  ],
+  "answer": [2],
+  "explain": {
+    "why": "NET 最常發生於 ileum，與神經內分泌細胞與 Peyer’s patches 有關。",
+    "options": [
+      "❌ 以腺癌為主",
+      "❌ 非最常見",
+      "✅ 正確（高頻）",
+      "❌ 非小腸"
+    ]
+  }
+},
+{
+  "id": "gi-008",
+  "source": "GI_PDF_01",
+  "difficulty": 5,
+  "tags": ["GIST", "分子", "必考"],
+  "type": "single",
+  "stem": "GIST 最典型的分子特徵為何？",
+  "options": [
+    "APC mutation",
+    "KRAS mutation",
+    "KIT（CD117）突變",
+    "MMR 基因缺陷"
+  ],
+  "answer": [2],
+  "explain": {
+    "why": "GIST 來源於 Cajal cells，最常見為 KIT（CD117）突變。",
+    "options": [
+      "❌ 大腸癌相關",
+      "❌ 腺癌路徑",
+      "✅ 正確（超高頻）",
+      "❌ Lynch syndrome"
+    ]
+  }
+},
+{
+  "id": "gi-009",
+  "source": "GI_PDF_01",
+  "difficulty": 4,
+  "tags": ["大腸", "解剖", "陷阱"],
+  "type": "single",
+  "stem": "哪一段大腸最容易發生穿孔？",
+  "options": [
+    "Ascending colon",
+    "Transverse colon",
+    "Descending colon",
+    "Cecum"
+  ],
+  "answer": [3],
+  "explain": {
+    "why": "Cecum 腔徑最大、壁最薄，依 Laplace’s law 最易穿孔。",
+    "options": [
+      "❌ 非最大腔徑",
+      "❌ 非最高風險",
+      "❌ 相對較安全",
+      "✅ 正確（考試陷阱）"
+    ]
+  }
+},
+{
+  "id": "gi-010",
+  "source": "GI_PDF_01",
+  "difficulty": 5,
+  "tags": ["痔瘡", "治療", "必考"],
+  "type": "single",
+  "stem": "Internal hemorrhoids Grade IV 的標準治療為何？",
+  "options": [
+    "藥膏治療",
+    "橡皮圈結紮",
+    "硬化治療",
+    "手術治療"
+  ],
+  "answer": [3],
+  "explain": {
+    "why": "Grade IV hemorrhoids 無法回復，標準治療為手術。",
+    "options": [
+      "❌ 僅適用輕度",
+      "❌ 適用 I–III",
+      "❌ 非首選",
+      "✅ 正確（一定考）"
+    ]
+  }
+},
+{
+  "id": "brain-001",
+  "source": "Brain_PDF_01",
+  "difficulty": 1,
+  "tags": ["神經系統", "必背"],
+  "type": "single",
+  "stem": "下列何者不屬於中樞神經系統（CNS）？",
+  "options": [
+    "Brain",
+    "Spinal cord",
+    "Cranial nerves",
+    "Cerebral cortex"
+  ],
+  "answer": [2],
+  "explain": {
+    "why": "CNS 包含 brain 與 spinal cord；cranial nerves 屬於 PNS。",
+    "options": [
+      "❌ CNS",
+      "❌ CNS",
+      "✅ 正確",
+      "❌ 屬於 brain 的一部分"
+    ]
+  }
+},
+{
+  "id": "brain-002",
+  "source": "Brain_PDF_01",
+  "difficulty": 2,
+  "tags": ["皮質分類", "考古"],
+  "type": "single",
+  "stem": "下列哪一種皮質主要負責思考、意識與主動動作？",
+  "options": [
+    "Paleocortex",
+    "Archicortex",
+    "Neocortex",
+    "Limbic cortex"
+  ],
+  "answer": [2],
+  "explain": {
+    "why": "Neocortex 負責高階認知、感覺、運動與意識活動。",
+    "options": [
+      "❌ 嗅覺相關",
+      "❌ 記憶相關",
+      "✅ 正確（必考）",
+      "❌ 非正式分類"
+    ]
+  }
+},
+{
+  "id": "brain-003",
+  "source": "Brain_PDF_01",
+  "difficulty": 3,
+  "tags": ["記憶", "海馬"],
+  "type": "single",
+  "stem": "Anterograde amnesia 最可能與哪一結構受損有關？",
+  "options": [
+    "Amygdala",
+    "Hippocampus",
+    "Basal ganglia",
+    "Thalamus"
+  ],
+  "answer": [1],
+  "explain": {
+    "why": "Hippocampus 負責將短期記憶轉為長期記憶，受損會造成前向性失憶。",
+    "options": [
+      "❌ 情緒為主",
+      "✅ 正確（超高頻）",
+      "❌ 動作控制",
+      "❌ 中繼站"
+    ]
+  }
+},
+{
+  "id": "brain-004",
+  "source": "Brain_PDF_01",
+  "difficulty": 4,
+  "tags": ["皮質層次", "Motor cortex"],
+  "type": "single",
+  "stem": "Motor cortex 的皮質類型與主要細胞為何？",
+  "options": [
+    "Granular cortex＋stellate cells",
+    "Agranular cortex＋pyramidal cells",
+    "Granular cortex＋pyramidal cells",
+    "Agranular cortex＋glial cells"
+  ],
+  "answer": [1],
+  "explain": {
+    "why": "Motor cortex 為 agranular cortex，以 pyramidal cells 發出動作訊號。",
+    "options": [
+      "❌ 感覺皮質",
+      "✅ 正確（考古）",
+      "❌ 配對錯誤",
+      "❌ 非主要細胞"
+    ]
+  }
+},
+{
+  "id": "brain-005",
+  "source": "Brain_PDF_01",
+  "difficulty": 4,
+  "tags": ["Betz cell", "傳導路徑"],
+  "type": "single",
+  "stem": "Betz cells 的軸突主要形成下列哪一條傳導路徑？",
+  "options": [
+    "Spinothalamic tract",
+    "Dorsal column",
+    "Corticospinal tract",
+    "Corticobulbar tract"
+  ],
+  "answer": [2],
+  "explain": {
+    "why": "Betz cells 為最大錐體細胞，其軸突形成 corticospinal tract。",
+    "options": [
+      "❌ 痛溫覺",
+      "❌ 本體感覺",
+      "✅ 正確（必考名詞）",
+      "❌ 主要控制腦神經"
+    ]
+  }
+},
+{
+  "id": "brain-006",
+  "source": "Brain_PDF_01",
+  "difficulty": 3,
+  "tags": ["Glial cells", "CNS"],
+  "type": "single",
+  "stem": "下列哪一種神經膠細胞負責在中樞神經系統形成髓鞘？",
+  "options": [
+    "Schwann cell",
+    "Astrocyte",
+    "Oligodendrocyte",
+    "Microglia"
+  ],
+  "answer": [2],
+  "explain": {
+    "why": "Oligodendrocyte 為 CNS 神經元形成髓鞘。",
+    "options": [
+      "❌ PNS",
+      "❌ 支撐代謝",
+      "✅ 正確",
+      "❌ 清道夫"
+    ]
+  }
+},
+{
+  "id": "brain-007",
+  "source": "Brain_PDF_01",
+  "difficulty": 4,
+  "tags": ["Parietal lobe", "症候群"],
+  "type": "single",
+  "stem": "Gerstmann syndrome 最可能發生於哪一腦葉？",
+  "options": [
+    "Frontal lobe",
+    "Dominant parietal lobe",
+    "Non-dominant parietal lobe",
+    "Temporal lobe"
+  ],
+  "answer": [1],
+  "explain": {
+    "why": "Gerstmann syndrome 發生於 dominant parietal lobe，常在 angular gyrus。",
+    "options": [
+      "❌ 動作人格",
+      "✅ 正確（必背四聯症）",
+      "❌ 半側忽略為主",
+      "❌ 聽覺記憶"
+    ]
+  }
+},
+{
+  "id": "brain-008",
+  "source": "Brain_PDF_01",
+  "difficulty": 5,
+  "tags": ["Temporal lobe", "癲癇"],
+  "type": "single",
+  "stem": "病人出現嗅覺幻覺（聞到不存在的氣味），最可能的病灶位置為何？",
+  "options": [
+    "Frontal lobe",
+    "Parietal lobe",
+    "Temporal lobe",
+    "Occipital lobe"
+  ],
+  "answer": [2],
+  "explain": {
+    "why": "嗅覺幻覺為顳葉癲癇的典型表現，與 paleocortex 有關。",
+    "options": [
+      "❌ 非典型",
+      "❌ 非嗅覺",
+      "✅ 正確（老師超愛）",
+      "❌ 視覺相關"
+    ]
+  }
+},
+{
+  "id": "brain-009",
+  "source": "Brain_PDF_01",
+  "difficulty": 5,
+  "tags": ["視覺路徑", "Meyer’s loop"],
+  "type": "single",
+  "stem": "Meyer’s loop 受損時，最典型的視野缺損為何？",
+  "options": [
+    "對側下象限缺損",
+    "對側上象限缺損",
+    "同側全盲",
+    "中央視野缺損"
+  ],
+  "answer": [1],
+  "explain": {
+    "why": "Meyer’s loop 位於顳葉，傳遞上視野，受損造成對側上象限缺損（pie in the sky）。",
+    "options": [
+      "❌ 頂葉路徑",
+      "✅ 正確（經典）",
+      "❌ 非此路徑",
+      "❌ 非典型"
+    ]
+  }
+},
+{
+  "id": "brain-010",
+  "source": "Brain_PDF_01",
+  "difficulty": 4,
+  "tags": ["Occipital lobe", "臨床"],
+  "type": "single",
+  "stem": "病人雙眼與視神經正常，卻完全看不到，最可能診斷為何？",
+  "options": [
+    "Optic neuritis",
+    "Visual agnosia",
+    "Cortical blindness",
+    "Anton syndrome"
+  ],
+  "answer": [2],
+  "explain": {
+    "why": "枕葉受損造成皮質性失明（cortical blindness），眼睛本身正常。",
+    "options": [
+      "❌ 視神經病變",
+      "❌ 看得到但不懂",
+      "✅ 正確",
+      "❌ 還要加上否認"
+    ]
+  }
+},
+{
+  "id": "breast-001",
+  "source": "Breast_PDF_01",
+  "difficulty": 1,
+  "tags": ["解剖", "必背"],
+  "type": "single",
+  "stem": "下列何者為乳房中分泌乳汁的基本單位？",
+  "options": [
+    "Duct",
+    "Lobule",
+    "Areola",
+    "Nipple"
+  ],
+  "answer": [1],
+  "explain": {
+    "why": "乳小葉（lobule）是乳汁分泌的基本單位，也是多數乳癌起源處。",
+    "options": [
+      "❌ 運送通道",
+      "✅ 正確（必考）",
+      "❌ 皮膚構造",
+      "❌ 出口"
+    ]
+  }
+},
+{
+  "id": "breast-002",
+  "source": "Breast_PDF_01",
+  "difficulty": 3,
+  "tags": ["解剖", "臨床"],
+  "type": "single",
+  "stem": "乳癌侵犯 Cooper’s ligaments 最可能造成下列何種表現？",
+  "options": [
+    "乳頭分泌物",
+    "皮膚凹陷（dimpling）",
+    "紅腫疼痛",
+    "乳房腫脹"
+  ],
+  "answer": [1],
+  "explain": {
+    "why": "Cooper’s ligaments 被腫瘤拉扯會造成皮膚凹陷，是乳癌重要警訊。",
+    "options": [
+      "❌ 其他原因",
+      "✅ 正確（考試超愛）",
+      "❌ 發炎為主",
+      "❌ 非典型"
+    ]
+  }
+},
+{
+  "id": "breast-003",
+  "source": "Breast_PDF_01",
+  "difficulty": 3,
+  "tags": ["淋巴", "超高頻"],
+  "type": "single",
+  "stem": "乳房最主要的淋巴引流路徑為何？",
+  "options": [
+    "Internal mammary nodes",
+    "Supraclavicular nodes",
+    "Axillary lymph nodes",
+    "Inguinal nodes"
+  ],
+  "answer": [2],
+  "explain": {
+    "why": "乳房最主要淋巴引流至腋窩淋巴結（axillary lymph nodes）。",
+    "options": [
+      "❌ 次要路徑",
+      "❌ 非主要",
+      "✅ 正確（一定考）",
+      "❌ 無關"
+    ]
+  }
+},
+{
+  "id": "breast-004",
+  "source": "Breast_PDF_01",
+  "difficulty": 4,
+  "tags": ["影像學", "微鈣化"],
+  "type": "single",
+  "stem": "下列哪一種影像檢查最適合偵測乳房微鈣化（microcalcification）？",
+  "options": [
+    "Breast ultrasound",
+    "Breast MRI",
+    "Mammography",
+    "CT scan"
+  ],
+  "answer": [2],
+  "explain": {
+    "why": "乳房攝影（mammography）最擅長偵測微鈣化，是早期乳癌的重要線索。",
+    "options": [
+      "❌ 看不到微鈣化",
+      "❌ 非第一線",
+      "✅ 正確（考試最愛）",
+      "❌ 不適用"
+    ]
+  }
+},
+{
+  "id": "breast-005",
+  "source": "Breast_PDF_01",
+  "difficulty": 5,
+  "tags": ["BI-RADS", "必背"],
+  "type": "single",
+  "stem": "BI-RADS 分類中，哪一級代表「高度懷疑惡性，需立即切片」？",
+  "options": [
+    "BI-RADS 2",
+    "BI-RADS 3",
+    "BI-RADS 4",
+    "BI-RADS 5"
+  ],
+  "answer": [3],
+  "explain": {
+    "why": "BI-RADS 5 代表高度懷疑惡性，需立即進行組織診斷。",
+    "options": [
+      "❌ 良性",
+      "❌ 追蹤即可",
+      "❌ 懷疑但非最高",
+      "✅ 正確（一定背）"
+    ]
+  }
+},
+{
+  "id": "breast-006",
+  "source": "Breast_PDF_01",
+  "difficulty": 4,
+  "tags": ["切片", "診斷"],
+  "type": "single",
+  "stem": "乳癌確診的黃金標準為何？",
+  "options": [
+    "Mammography",
+    "Breast MRI",
+    "Core needle biopsy",
+    "PET scan"
+  ],
+  "answer": [2],
+  "explain": {
+    "why": "Core needle biopsy 是乳癌確診的黃金標準，可同時檢測 ER/PR/HER2。",
+    "options": [
+      "❌ 影像非確診",
+      "❌ 輔助用途",
+      "✅ 正確（必考）",
+      "❌ 非第一線"
+    ]
+  }
+},
+{
+  "id": "breast-007",
+  "source": "Breast_PDF_01",
+  "difficulty": 5,
+  "tags": ["分子分型", "高分題"],
+  "type": "single",
+  "stem": "下列何者屬於預後最差的乳癌分子分型？",
+  "options": [
+    "Luminal A",
+    "Luminal B",
+    "HER2 type",
+    "Triple negative breast cancer"
+  ],
+  "answer": [3],
+  "explain": {
+    "why": "TNBC 為 ER− / PR− / HER2−，缺乏標靶治療，預後最差。",
+    "options": [
+      "❌ 預後最好",
+      "❌ 中等",
+      "❌ 有標靶藥",
+      "✅ 正確（高分區）"
+    ]
+  }
+},
+{
+  "id": "breast-008",
+  "source": "Breast_PDF_01",
+  "difficulty": 4,
+  "tags": ["手術", "淋巴結"],
+  "type": "single",
+  "stem": "前哨淋巴結切片（Sentinel lymph node biopsy）的主要目的為何？",
+  "options": [
+    "提高存活率",
+    "避免化療",
+    "減少不必要的腋下淋巴結清除",
+    "取代所有影像檢查"
+  ],
+  "answer": [2],
+  "explain": {
+    "why": "前哨淋巴結切片可避免不必要的腋下清除，降低淋巴水腫風險。",
+    "options": [
+      "❌ 非直接目的",
+      "❌ 無法保證",
+      "✅ 正確（超愛考）",
+      "❌ 錯誤"
+    ]
+  }
+},
+{
+  "id": "breast-009",
+  "source": "Breast_PDF_01",
+  "difficulty": 5,
+  "tags": ["骨轉移", "ONJ"],
+  "type": "single",
+  "stem": "下列哪一組藥物使用前需先照會牙科，以避免 ONJ？",
+  "options": [
+    "Tamoxifen 與 Letrozole",
+    "Trastuzumab 與 Pertuzumab",
+    "Zoledronic acid 與 Denosumab",
+    "Paclitaxel 與 Doxorubicin"
+  ],
+  "answer": [2],
+  "explain": {
+    "why": "Bisphosphonates（Zometa）與 Denosumab 可能導致下顎骨壞死（ONJ）。",
+    "options": [
+      "❌ 內分泌治療",
+      "❌ 標靶藥",
+      "✅ 正確（整合題必考）",
+      "❌ 化療藥"
+    ]
+  }
+},
+{
+  "id": "breast-010",
+  "source": "Breast_PDF_01",
+  "difficulty": 4,
+  "tags": ["放射治療", "流程"],
+  "type": "single",
+  "stem": "下列何者為 IORT（術中放射治療）的主要優點？",
+  "options": [
+    "適用於所有乳癌病人",
+    "可完全取代手術",
+    "照射範圍小、一次完成",
+    "副作用完全沒有"
+  ],
+  "answer": [2],
+  "explain": {
+    "why": "IORT 在手術中一次完成放射治療，照射範圍小，但僅適用特定病人。",
+    "options": [
+      "❌ 適應症有限",
+      "❌ 錯誤",
+      "✅ 正確（流程題）",
+      "❌ 不可能"
+    ]
+  }
+}
+
+
   ]
 }
